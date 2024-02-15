@@ -1,0 +1,11 @@
+@import './components/Header.scss';
+@import './utils/variables.scss';
+@import './components/Banner.scss';
+@import './components/Footer.scss';
+@import './base/normalize.scss';
+@import './components/Card.scss';
+
+body{
+    margin-left:0;
+    margin-right:0;
+}
