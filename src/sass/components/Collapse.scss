@@ -1,60 +1,88 @@
 @import '../utils/variables.scss';
 
 .collapses{
-    border : 1px solid #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top:38px;
+    margin-bottom:38px;
+    margin-left:208px;
+    margin-right:208px;
 
     .collapse__title{
         display:flex;
         align-items: center;
         justify-content: space-between;
-        background: #d3d3d3;
-        padding:1rem;
+        background: $red;
+        border-radius:5px;
+        color:$white;
+        font-family: $fontStyle;
+        font-size: 24px;
+        padding-left:20px;
+        padding-right:20px;
+        padding-top:10px;
+        padding-bottom:10px;
         font-weight: bold;
 
         :hover{
             cursor:pointer;
-            background:#ddd;
+           
         }
     }
 
     .collapse__icon{
         position:relative;
-        width:10px;
-        height:1px;
-        background:#333;
-
-        ::before{
-            position: absolute;
-            width:10px;
-            height:1px;
-            background:#333;
-            transform: rotate(90deg);
-            transition: all .2s;
+        width:32px;
+        height:32px;
+        transition:transform 0.4s ease;
         }
-    }
+    
 
-    .active .collapse__icon::before{
-        transform: rotate(0deg);
-        opacity:0;
-    }
+    .active {
+        
+        .collapse__icon{
+        transform: rotate(-180deg);
+       
+        }
 
-    .active .collapse__title{
-        cursor:pointer;
-        background:#ddd;
+        .collapse__title{
+            cursor:pointer;
+        }
+
+        .collapse__content{
+            visibility: visible;
+            opacity:1;
+            height:auto;
+            background: $grey;
+            padding-top:25px;
+            padding-bottom:20px;
+           
+          
+         
+        }    
     }
+    
 
     .collapse__content{
         visibility: hidden;
-        height: 0;
         opacity: 0;
         overflow: hidden;
-        padding: 0 1rem;
-        transition: all .2s ease-in;
+        transition: height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
         font-family: $fontStyle;
+        padding-right:20px;
+        padding-left:28px;
+        height:0;
         }
-    .active .collapse__content{
-        visibility: visible;
-        opacity:1;
-        height:auto;
-    }    
+
+}
+
+@keyframes slide {
+    from{
+        top:0;
+    }
+
+    to {
+        top:100%;
+    }
+    
 }
