@@ -1,0 +1,60 @@
+@import '../utils/variables.scss';
+
+.collapses{
+    border : 1px solid #d3d3d3;
+
+    .collapse__title{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #d3d3d3;
+        padding:1rem;
+        font-weight: bold;
+
+        :hover{
+            cursor:pointer;
+            background:#ddd;
+        }
+    }
+
+    .collapse__icon{
+        position:relative;
+        width:10px;
+        height:1px;
+        background:#333;
+
+        ::before{
+            position: absolute;
+            width:10px;
+            height:1px;
+            background:#333;
+            transform: rotate(90deg);
+            transition: all .2s;
+        }
+    }
+
+    .active .collapse__icon::before{
+        transform: rotate(0deg);
+        opacity:0;
+    }
+
+    .active .collapse__title{
+        cursor:pointer;
+        background:#ddd;
+    }
+
+    .collapse__content{
+        visibility: hidden;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        padding: 0 1rem;
+        transition: all .2s ease-in;
+        font-family: $fontStyle;
+        }
+    .active .collapse__content{
+        visibility: visible;
+        opacity:1;
+        height:auto;
+    }    
+}
