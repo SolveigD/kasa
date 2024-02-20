@@ -1,11 +1,12 @@
 import Collapse from "../../components/Collapse";
 import Banner from "../../components/Banner";
+import Image from '../../assets/imgapropos.jpg';
 
 
 function APropos () {
     return ( 
      <div>
-     <Banner showTitle={false} overlayOpacity={0.3} backgroundImageUrl="http://localhost:3000/static/media/imgapropos.796d007cebdd47cc489b.jpg"/>   
+     <Banner showTitle={false} overlayOpacity={0.3} backgroundImageUrl={Image}/>   
     <div className="collapses">
     <Collapse title="Fiabilité" 
     content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes au logement, et toutes les informations sont régulièrement vérifiées par notre équipe."/>
