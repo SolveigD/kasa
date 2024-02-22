@@ -4,7 +4,8 @@ import Home from '../../pages/Home';
 import Header from '../Header';
 import APropos from '../../pages/A-propos';
 import Footer from '../Footer';
-import Error from '../Error';
+import Error from '../../pages/Error';
+import Logement from '../../pages/Logement';
 
 
 function AppRouter() {
@@ -14,6 +15,7 @@ function AppRouter() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/a-propos" element={<APropos />} />
+          <Route path="/logement/:id" element={<Logement />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />

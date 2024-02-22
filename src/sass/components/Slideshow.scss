@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+}
+
+.arrow_container {
+  position: absolute;
+  top: 45%;
+  left: 100px;
+  right: 100px;
+  display: flex;
+  justify-content: space-between;
+
+  & .arrow_left, & .arrow_right {
+    margin: 10px;
+    cursor: pointer;
+  }
+}
