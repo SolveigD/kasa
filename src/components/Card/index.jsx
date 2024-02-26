@@ -2,8 +2,8 @@ import '../../sass/components/Card.scss'
 
 
 
-function Card({ logement }) { // Recevez les données du logement en tant que prop
-    const { title, cover } = logement; // Destructurez les données du logement
+function Card({ logement }) { 
+    const { title, cover } = logement;                               
   
     return (
       

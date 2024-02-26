@@ -4,6 +4,10 @@
 .logo
 {
     height:68px;
+    @media (max-width: 767.98px) {
+        height: 47px;
+    
+    }
 }
 
 .top_link
@@ -15,7 +19,14 @@
     padding-left:100px;
     padding-right:100px;
     margin-bottom:50px;
-    
+    @media (max-width: 767.98px) {
+        padding-top: 20px;
+        padding-bottom: 27px;
+        padding-left:20px;
+        padding-right:20px;
+        margin-bottom: 0;
+
+    } 
    
     
 
@@ -25,7 +36,16 @@
         justify-content: center;
         align-items:center;
         gap:57px;
+
+        & .accueil, & .apropos{
+            text-decoration:underline;
+        }
+
+        
        
+        @media (max-width: 767.98px) {
+            gap:26px;
+        }
 
         a {
             font-family: $fontStyle;
@@ -33,7 +53,12 @@
             font-size:24px;
             text-decoration:none;
 
-            :active{
+            @media (max-width: 767.98px) {
+                font-size:12px;
+                text-transform: uppercase;
+            }
+
+            :active, :visited{
                 text-decoration:underline;
             }
         }

@@ -1,17 +1,27 @@
 .container {
   position: relative;
-}
+  width:100%;
+  height:415px;
+  margin:auto;
 
-.arrow_container {
-  position: absolute;
-  top: 45%;
-  left: 100px;
-  right: 100px;
-  display: flex;
-  justify-content: space-between;
-
-  & .arrow_left, & .arrow_right {
-    margin: 10px;
-    cursor: pointer;
+  .arrow_container {
+    position: absolute;
+    top: 40%;
+    left: 35px;
+    right: 35px;
+    display: flex;
+    justify-content: space-between;
+  
+    & .arrow_left, & .arrow_right {
+      margin: 10px;
+      cursor: pointer;
+    }
   }
+    .currentImage {
+     width:100%;
+    height:100%;
+    border-radius:25px;
+   }
+
 }
+

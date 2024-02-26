@@ -21,17 +21,17 @@ function Slideshow({logementData}) {
     return (
         <div className="container">
             <div className='arrow_container'>
-                <img src={ArrowLeft}  className='arrow_left' onClick={prevSlide} />
-                <img src={ArrowRight}  className='arrow_right' onClick={nextSlide} />
+                <img src={ArrowLeft}  className='arrow_left' onClick={prevSlide} alt='fleche gauche'/>
+                <img src={ArrowRight}  className='arrow_right' onClick={nextSlide} alt='fleche droite' />
             </div>
 
             {logementData.pictures.map((picture, index) => (
                 index === currentIndex && (
-                    <img key={index} src={picture} className='currentImage' alt={`Image ${index}`} />
+                    <img key={index} src={picture} className='currentImage' alt={`logement ${index}`} />
                 )
             ))}
 
-            <div className='page_counter'><span>{currentIndex + 1}</span>/<span></span>{totalImages}</div>
+            
         </div>
             
     )

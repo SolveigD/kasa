@@ -1,0 +1,114 @@
+@import '../utils/variables.scss';
+
+.container_logement{
+
+    padding-left:100px;
+    padding-right:100px;
+
+.top_information{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family:$fontStyle;
+    padding-top:30px;
+    padding-bottom:20px;
+    .title_location{
+        
+    
+        .title{
+            color:$red;
+            font-size:36px;
+            font-weight:500;
+        }
+    
+        .location{
+            font-size:18px;
+        }
+    }
+    .host_picture{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+
+        .hostName{
+            color:$red;
+            font-size:18px;
+            align-self: center;
+            line-height: 142%;
+        }
+        
+        .hostPicture{
+            width:64px;
+            height:64px;
+            border-radius:50%;
+        }
+    }
+
+}
+
+.tags_rate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+
+    .tags{
+        display: flex;
+        flex-direction: row;
+        gap:10px;    
+
+        .tag{
+            background-color: $red;
+            color:white;
+            padding-left:40px;
+            padding-right:40px;
+            padding-top:5px;
+            padding-bottom:5px;
+            border-radius:10px;
+            font-family: $fontStyle;
+            font-weight:700;
+            line-height: 142%;
+        }
+    }
+
+    .rate{
+
+        display:flex;
+        flex-direction: row;
+        gap:6px;    
+
+        .RedStar, .GreyStar{
+            width: 24.75px;
+            height: 24px;
+        }
+    }
+    
+  
+  
+}
+
+.collapses.logement_collapse{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left:0;
+    margin-right:0;
+    margin-top:24px;
+    margin-bottom:50px;
+    gap:76px;
+
+    .collapse__title{
+        font-size:18px;
+    }
+
+    .collapse {
+        flex: 1;
+    }
+
+    .liste_equipement{
+        list-style-type: none;
+    }
+}
+
+}
+
