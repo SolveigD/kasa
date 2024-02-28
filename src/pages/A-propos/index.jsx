@@ -1,11 +1,12 @@
 import Collapse from "../../components/Collapse";
 import Banner from "../../components/Banner";
 import Image from '../../assets/imgapropos.jpg';
+import '../../sass/layouts/A-propos.scss';
 
 
 function APropos () {
     return ( 
-     <div>
+     <div className="container_apropos">
      <Banner showTitle={false} overlayOpacity={0.3} backgroundImageUrl={Image}/>   
     <div className="collapses">
     <Collapse title="Fiabilité" 

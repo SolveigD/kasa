@@ -7,11 +7,20 @@
     gap:139px;
     margin-bottom:139px;
 
+    @media (max-width: 767.98px) {
+        gap:113px;
+        margin-bottom:113px;
+        margin-top:113px;
+    }
+
     .title_error{
         font-family: $fontStyle;
         font-size:288px;
         color:$red;
         font-weight: 700;
+        @media (max-width: 767.98px) {
+            font-size:96px;
+        }
     }
 
     .message_error{
@@ -19,6 +28,14 @@
         color:$red;
         font-size: 36px;
         font-weight: 500;
+
+        @media (max-width: 767.98px) {
+            font-size:18px;
+            text-align:center;
+            padding-left:57px;
+            padding-right:57px;
+        
+        }
     }
 
     .return_error{
@@ -26,5 +43,9 @@
         font-size:18px;
         color:$black;
         text-decoration: underline;
+
+        @media (max-width: 767.98px) {
+           font-size:14px; 
+        }
     }
 }

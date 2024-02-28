@@ -10,6 +10,11 @@
     margin:auto;
     border-radius:25px;
     z-index:-1;
+    display: flex;
+    justify-content: center;
+      @media (max-width: 767.98px) {
+        height:111px;
+      }
 
     .overlay {
         position: absolute;
@@ -31,8 +36,16 @@
         font-size: 48px;
         font-style: normal;
         font-weight: 700;
-        line-height: 223px; 
+        align-self: center;
         text-align: center;
+
+        @media (max-width: 767.98px) {
+          font-size:24px;
+          padding-right:90px;
+          line-height: 30px;
+          text-align: left;
+          margin-left:16px;
+        }
        
     }
 }
