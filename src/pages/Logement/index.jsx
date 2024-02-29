@@ -1,10 +1,11 @@
 import Slideshow from "../../components/Slideshow";
-import { useParams, Navigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import logementsData from '../../logements.json';
 import RedStar from '../../assets/RedStar.png';
 import GreyStar from '../../assets/GreyStar.png';
 import Collapse from "../../components/Collapse";
-import '../../sass/layouts/Logements.scss'
+import '../../sass/layouts/Logements.scss';
+import Error from "../Error";
 
 
 function Logement() {
@@ -12,7 +13,7 @@ function Logement() {
   const logementId = useParams();
   const logementData = logementsData.find(data => data.id === logementId.id);
   if (!logementData) {
-    return <Navigate to="*" />;
+    return <Error />;
   }
 
   const rating = parseInt(logementData.rating); 

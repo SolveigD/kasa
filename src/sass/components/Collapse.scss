@@ -81,17 +81,15 @@
         padding-right:20px;
         padding-left:28px;
         height:0;
-        }
-
-}
-
-@keyframes slide {
-    from{
-        top:0;
-    }
-
-    to {
-        top:100%;
-    }
+        
+        @media (max-width: 767.98px) {    
+            font-size:12px;
+            padding-right:20px;
+            padding-left:20px;
+            padding-top:13px;
+            padding-bottom:19px;
     
+        }
+    }   
+
 }
