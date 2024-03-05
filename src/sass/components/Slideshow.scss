@@ -1,3 +1,5 @@
+@import '../utils/variables.scss';
+
 .container {
   position: relative;
   width:100%;
@@ -29,10 +31,20 @@
       }
     }
   }
+
+  .totalimage{
+    position:absolute;
+    font-size: 18px;
+    color:white;
+    top:90%;
+    left:48%;
+    font-family: $fontStyle;
+  }
     .currentImage {
      width:100%;
     height:100%;
     border-radius:25px;
+    object-fit:cover;
    }
 
 }

@@ -8,10 +8,12 @@ function Card({ logement }) {
     return (
       
       <div className="card">
-        <img src={cover} alt={title} className='image_card' />
-        <h2 className='title_card'>{title}</h2>
-
+         <div className="image_container">
+            <img src={cover} alt={title} className='image_card' />
+            <div className="image_overlay"></div>
       </div>
+            <h2 className='title_card'>{title}</h2>
+    </div>
     
     );
   }

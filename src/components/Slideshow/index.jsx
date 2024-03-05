@@ -24,13 +24,18 @@ function Slideshow({logementData}) {
                 <img src={ArrowLeft}  className='arrow_left' onClick={prevSlide} alt='fleche gauche'/>
                 <img src={ArrowRight}  className='arrow_right' onClick={nextSlide} alt='fleche droite' />
             </div>
+            <div className='totalimage'>
+                            {currentIndex + 1}/{totalImages}
+                        </div>
 
             {logementData.pictures.map((picture, index) => (
                 index === currentIndex && (
                     <img key={index} src={picture} className='currentImage' alt={`logement ${index}`} />
                 )
             ))}
-
+                        <div className='totalimage'>
+                            {currentIndex + 1}/{totalImages}
+                        </div>
             
         </div>
             
